@@ -31,7 +31,7 @@ export default async function Home() {
       )}
 
       {/* Movie Rows Container */}
-      <div className="container mx-auto px-4 md:px-6 -mt-16 md:-mt-24 relative z-30 space-y-8 md:space-y-12">
+      <div className="container mx-auto px-4 md:px-6 mt-4 md:-mt-24 relative z-30 space-y-8 md:space-y-12">
         {trendingMovies.length > 0 && (
           <MovieRow title="Trending Movies" movies={trendingMovies} />
         )}

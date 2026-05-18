@@ -64,7 +64,7 @@ export function HeroSection({ movies }: HeroSectionProps) {
   };
 
   return (
-    <section className="relative w-full h-[70vh] md:h-[85vh] flex items-center bg-black overflow-hidden border-b border-white/5 group">
+    <section className="relative w-full h-[75vh] md:h-[85vh] flex items-center bg-black overflow-hidden border-b border-white/5 group">
       
       {/* Background Image Carousel (Fade Transition) */}
       <AnimatePresence mode="wait">
@@ -127,7 +127,7 @@ export function HeroSection({ movies }: HeroSectionProps) {
             </div>
 
             {/* Overview */}
-            <p className="text-sm md:text-base text-slate-300 max-w-xl leading-relaxed line-clamp-3 md:line-clamp-4">
+            <p className="text-sm md:text-base text-slate-300 max-w-xl leading-relaxed line-clamp-2 md:line-clamp-4">
               {movie.overview}
             </p>
 
@@ -183,7 +183,7 @@ export function HeroSection({ movies }: HeroSectionProps) {
 
       {/* Pagination Dot Indicators */}
       {movies.length > 1 && (
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2">
+        <div className="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2">
           {movies.map((_, idx) => (
             <button
               key={idx}

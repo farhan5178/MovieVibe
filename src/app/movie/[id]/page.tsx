@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getMovieDetails, getImageUrl, getSimilarMovies } from '@/lib/api';
-import { PlayTrailerButton } from '@/components/play-trailer-button';
+import { MovieActions } from '@/components/movie-actions';
 import { MovieRow } from '@/components/movie-row';
 import { FaStar, FaClock, FaDollarSign, FaCalendarAlt, FaChevronLeft } from 'react-icons/fa';
 
@@ -136,12 +136,8 @@ export default async function MovieDetailsPage({ params }: PageProps) {
               </span>
             </div>
 
-            {/* Premium Dynamic Action Button */}
-            {trailerKey && (
-              <div className="pt-1">
-                <PlayTrailerButton trailerKey={trailerKey} movieTitle={movie.title} />
-              </div>
-            )}
+            {/* Premium Dynamic Action Buttons */}
+            <MovieActions movie={movie} trailerKey={trailerKey} />
 
             {/* Genres Tagline */}
             <div className="flex flex-wrap gap-2 pt-1">

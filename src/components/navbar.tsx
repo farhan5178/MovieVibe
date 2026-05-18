@@ -317,6 +317,9 @@ export function Navbar() {
           <Link href="/movies" className="hover:text-white transition-colors duration-200">
             Movies
           </Link>
+          <Link href="/watchlist" className="hover:text-white transition-colors duration-200">
+            Watchlist
+          </Link>
         </nav>
 
         {/* Right Actions (Search, Theme, Mobile Toggle) */}
@@ -369,6 +372,13 @@ export function Navbar() {
                   className="hover:text-white transition-colors"
                 >
                   Movies
+                </Link>
+                <Link
+                  href="/watchlist"
+                  onClick={() => setIsOpen(false)}
+                  className="hover:text-white transition-colors"
+                >
+                  Watchlist
                 </Link>
               </div>
             </div>
