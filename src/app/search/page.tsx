@@ -43,7 +43,7 @@ export default async function SearchPage({ searchParams }: PageProps) {
             Search Results
           </span>
           <h1 className="text-3xl md:text-5xl font-black tracking-tight break-words">
-            {query.trim() ? `&ldquo;${query}&rdquo;` : 'Search Movies'}
+            {query.trim() ? `“${query}”` : 'Search Movies'}
           </h1>
           {query.trim() && (
             <p className="text-slate-400 text-sm md:text-base">

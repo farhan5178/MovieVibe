@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaFacebookF, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
+import { FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 export function Footer() {
   return (
@@ -58,19 +58,16 @@ export function Footer() {
 
           {/* Social Links */}
           <div className="flex flex-col gap-4">
-            <h3 className="text-sm font-bold text-white tracking-wider uppercase">Follow Us</h3>
+            <h3 className="text-sm font-bold text-white tracking-wider uppercase">Follow Developer</h3>
             <div className="flex items-center gap-3">
-              <a href="#" className="w-8 h-8 rounded-full bg-white/5 hover:bg-red-600 hover:text-white flex items-center justify-center text-slate-400 transition-all duration-300">
-                <FaFacebookF className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-white/5 hover:bg-red-600 hover:text-white flex items-center justify-center text-slate-400 transition-all duration-300">
-                <FaTwitter className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-white/5 hover:bg-red-600 hover:text-white flex items-center justify-center text-slate-400 transition-all duration-300">
-                <FaInstagram className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-white/5 hover:bg-red-600 hover:text-white flex items-center justify-center text-slate-400 transition-all duration-300">
+              <a href="https://github.com/farhan5178" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 hover:bg-red-600 hover:text-white flex items-center justify-center text-slate-400 transition-all duration-300">
                 <FaGithub className="w-4 h-4" />
+              </a>
+              <a href="https://www.linkedin.com/in/farhan-sadik-turjo/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 hover:bg-red-600 hover:text-white flex items-center justify-center text-slate-400 transition-all duration-300">
+                <FaLinkedinIn className="w-4 h-4" />
+              </a>
+              <a href="https://www.instagram.com/farhansadik_turjo/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 hover:bg-red-600 hover:text-white flex items-center justify-center text-slate-400 transition-all duration-300">
+                <FaInstagram className="w-4 h-4" />
               </a>
             </div>
             <p className="text-[10px] text-slate-500">
@@ -81,7 +78,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-slate-500 text-center md:text-left">
-            © {new Date().getFullYear()} MovieVibe. All rights reserved. Made for cinematic excellence.
+            © {new Date().getFullYear()} MovieVibe. All rights reserved. Developed with cinematic excellence by <a href="https://github.com/farhan5178" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 font-bold transition-colors">Farhan Sadik Turjo</a>.
           </p>
         </div>
       </div>

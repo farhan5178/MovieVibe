@@ -16,14 +16,14 @@ export default async function Home() {
   const popularMovies = popularData.results || [];
   const topRatedMovies = topRatedData.results || [];
 
-  // Spotlight movie for the Hero section
-  const spotlightMovie = trendingMovies[0] || popularMovies[0];
+  // Spotlight movies for the Hero section carousel (top 5)
+  const spotlightMovies = trendingMovies.slice(0, 5);
 
   return (
     <div className="bg-black text-white min-h-screen pb-16">
       {/* Hero Section */}
-      {spotlightMovie ? (
-        <HeroSection movie={spotlightMovie} />
+      {spotlightMovies.length > 0 ? (
+        <HeroSection movies={spotlightMovies} />
       ) : (
         <div className="h-[50vh] flex items-center justify-center">
           <p className="text-slate-400">No movies found. Please configure your TMDB API Key.</p>
